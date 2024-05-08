@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">RickAndMorty</string>
+    <string name="characters">Characters</string>
+    <string name="episodes">Episodes</string>
+    <string name="locations">Locations</string>
+    <string name="origin_location">Origin location:</string>
+    <string name="last_known_location">Last known location:</string>
+    <string name="dimension">Dimension</string>
+    <string name="type">Type</string>
+    <string name="air_date">Air date</string>
+    <string name="episode">Episode</string>
+</resources>

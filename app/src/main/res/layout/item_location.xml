@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    app:cardCornerRadius="12dp"
+    android:backgroundTint="@color/grey_100"
+    android:layout_marginBottom="@dimen/spacing_4"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/spacing_4">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/rv_characters_counter"
+            android:layout_marginEnd="@dimen/spacing_4"
+            tools:text="Name"
+            style="@style/ItemCard.Text.Title"
+            />
+
+
+        <TextView
+            android:id="@+id/rv_characters_counter"
+            style="@style/ItemCard.Text.Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_counter"
+            tools:text="10"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:backgroundTint="?attr/colorPrimary"
+            android:textColor="@color/white"
+            android:drawableEnd="@drawable/icon_people_24"
+            android:drawableTint="@color/white"/>
+
+
+        <TextView
+            style="@style/ItemCard.Text.Subtitle.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_type_label"
+            app:layout_constraintTop_toBottomOf="@id/tv_name"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/spacing_4"
+            android:text="Type:"/>
+
+
+        <TextView
+            style="@style/ItemCard.Text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_type"
+            app:layout_constraintTop_toTopOf="@id/tv_type_label"
+            app:layout_constraintStart_toEndOf="@id/tv_type_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/spacing_4"
+            tools:text="@string/type"/>
+
+
+        <TextView
+            style="@style/ItemCard.Text.Subtitle.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_dimension_label"
+            app:layout_constraintTop_toBottomOf="@id/tv_type"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/spacing_4"
+            android:text="Dimension:"/>
+
+
+        <TextView
+            style="@style/ItemCard.Text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_dimension"
+            app:layout_constraintTop_toTopOf="@id/tv_dimension_label"
+            app:layout_constraintStart_toEndOf="@id/tv_dimension_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/spacing_4"
+            tools:text="@string/dimension"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
